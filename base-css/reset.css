@@ -1,0 +1,38 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    font-family: Arial, sans-serif;
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+/* ELEMENTOS */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* VARIÁVEIS */
+:root {
+    --cor-primaria: #2a7ae4;
+    --cor-fundo: #ffffff;
+    --cor-texto: #222222;
+
+    --espaco: 16px;
+    --borda: 8px;
+}

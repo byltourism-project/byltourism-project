@@ -1,0 +1,21 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: var(--cor-fundo);
+    margin: 20px;
+}
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--cor-fundo);
+    margin: 20px;
+}
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--cor-terciaria);
+    margin: 20px;
+}
+body {
+    background-color: black;
+}
