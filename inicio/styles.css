@@ -106,6 +106,7 @@ h1, h2 {
 /* EFEITO HOVER */
 .card:hover {
     transform: scale(1.02);
+    transition: 0.3s;
 }
 .bahia-img {
     border-radius: 0.3rem;
@@ -132,4 +133,36 @@ p {
     border-radius: 0.4rem;
     text-align: center;
     font-size: 0.85rem;
+}
+.travel-aside {
+    width: 90%;
+    max-width: 900px;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.travel-aside h2 {
+    margin-bottom: 1rem;
+}
+
+.travel-aside h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.travel-aside p {
+    line-height: 1.5;
+    color: #333;
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.253);
+    font-size: 0.5rem;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 0.1rem solid black;
 }
