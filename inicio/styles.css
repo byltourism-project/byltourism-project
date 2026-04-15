@@ -1,21 +1,135 @@
-.box {
-    width: 200px;
-    height: 200px;
-    background-color: var(--cor-fundo);
-    margin: 20px;
-}
-.box1 {
-    width: 200px;
-    height: 200px;
-    background-color: var(--cor-fundo);
-    margin: 20px;
-}
-.box2 {
-    width: 200px;
-    height: 200px;
-    background-color: var(--cor-terciaria);
-    margin: 20px;
-}
 body {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.253);
+    font-family: "Roboto", sans-serif;
+}
+
+/* HEADER */
+header {
+    border-bottom: 0.1rem solid black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 95%;
+}
+
+/* LOGO */
+.logo {
+    width: 10rem;
+    height: 7rem;
+}
+
+/* NAV */
+.nav-place {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.link {
+    background-color: rgb(175, 126, 126);
+    padding: 0.5rem;
+    color: black;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.link:hover {
+    background-color: rgba(0, 0, 0, 0.61);
+    color: white;
+    transition: 0.4s;
+}
+
+/* TÍTULO */
+h1, h2 {
+    text-align: center;
+    background-color: rgba(3, 0, 0, 0.233);
+    width: 60%;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* SECTION 1 */
+.container-one {
+    padding: 2rem;
+    margin: auto;
+}
+
+/* VÍDEO CENTRALIZADO E RESPONSIVO */
+.video-yt {
+    display: block;
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 900px;
+    aspect-ratio: 16 / 9;
+    border-radius: 0.5rem;
+}
+
+/* SECTION 2 */
+.container-two {
+    width: 95%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+/* TÍTULO SECTION */
+.container-two h2 {
+    margin-bottom: 1rem;
+}
+
+/* CONTAINER DOS CARDS */
+.cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+    width: 260px;
+    min-height: 350px;
+    background-color: white;
+    border-radius: 0.8rem;
+    padding: 1.2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+/* EFEITO HOVER */
+.card:hover {
+    transform: scale(1.02);
+}
+.bahia-img {
+    border-radius: 0.3rem;
+}
+h5 {
+    text-align: center;
+    margin: auto;
+    border-bottom: 0.1rem solid black;
+    width: 65%;
+    padding: 0.2rem;
+}
+p {
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.card a {
+    text-decoration: none;
+    background-color: #0077cc;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    text-align: center;
+    font-size: 0.85rem;
 }
