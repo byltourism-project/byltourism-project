@@ -1,11 +1,11 @@
 body {
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: #f5f7fa;
     font-family: "Roboto", sans-serif;
 }
 
-/* HEADER */
 header {
-    border-bottom: 0.1rem solid black;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
 }
 
 .header {
@@ -16,52 +16,47 @@ header {
     width: 95%;
 }
 
-/* LOGO */
 .logo {
     width: 10rem;
     height: 7rem;
 }
 
-/* NAV */
 .nav-place {
     display: flex;
     gap: 0.5rem;
 }
 
 .link {
-    background-color: rgb(175, 126, 126);
+    background-color: #0077cc;
     padding: 0.5rem;
-    color: black;
+    color: white;
     border-radius: 0.5rem;
     font-size: 0.8rem;
     text-decoration: none;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .link:hover {
-    background-color: rgba(0, 0, 0, 0.61);
-    color: white;
-    transition: 0.4s;
+    background-color: #005fa3;
+    transition: 0.3s;
 }
 
-/* TÍTULO */
 h1, h2 {
     text-align: center;
-    background-color: rgba(3, 0, 0, 0.233);
+    background-color: #e9ecef;
     width: 60%;
     margin: 2rem auto;
     border-radius: 0.5rem;
     padding: 0.5rem;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    color: #333;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* SECTION 1 */
 .container-one {
     padding: 2rem;
     margin: auto;
 }
 
-/* VÍDEO CENTRALIZADO E RESPONSIVO */
 .video-yt {
     display: block;
     margin: 2rem auto;
@@ -71,19 +66,16 @@ h1, h2 {
     border-radius: 0.5rem;
 }
 
-/* SECTION 2 */
 .container-two {
     width: 95%;
     margin: auto;
     padding: 2rem 0;
 }
 
-/* TÍTULO SECTION */
 .container-two h2 {
     margin-bottom: 1rem;
 }
 
-/* CONTAINER DOS CARDS */
 .cards {
     display: flex;
     gap: 2rem;
@@ -91,40 +83,43 @@ h1, h2 {
     flex-wrap: wrap;
 }
 
-/* CARD */
 .card {
     width: 260px;
     min-height: 350px;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 0.8rem;
     padding: 1.2rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
+    border: 1px solid #eee;
 }
 
-/* EFEITO HOVER */
 .card:hover {
     transform: scale(1.02);
     transition: 0.3s;
 }
+
 .bahia-img {
     border-radius: 0.3rem;
 }
+
 h5 {
     text-align: center;
     margin: auto;
-    border-bottom: 0.1rem solid black;
+    border-bottom: 1px solid #ddd;
     width: 65%;
     padding: 0.2rem;
 }
+
 p {
     font-size: 0.9rem;
-    color: #444;
+    color: #555;
     line-height: 1.4;
     margin-bottom: 1rem;
     text-align: center;
 }
+
 .card a {
     text-decoration: none;
     background-color: #0077cc;
@@ -134,14 +129,15 @@ p {
     text-align: center;
     font-size: 0.85rem;
 }
+
 .travel-aside {
     width: 90%;
     max-width: 900px;
     margin: 2rem auto;
-    background-color: white;
+    background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 0.8rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .travel-aside h2 {
@@ -158,76 +154,92 @@ p {
     line-height: 1.5;
     color: #333;
 }
+
 footer {
-    background-color: rgba(0, 0, 0, 0.253);
-    font-size: 0.5rem;
+    background-color: #e4e1e1;
+    font-size: 0.6rem;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-    border-top: 0.1rem solid black;
+    border-top: 1px solid #cdc2c2;
+    color: #555;
 }
 
 .main-container {
     width: 95%;
     margin: auto;
 }
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .contact-form {
-    background-color: white;
+    background-color: #ffffff;
     padding: 2rem;
     border-radius: 0.8rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     width: 100%;
     max-width: 700px;
 }
 
-/* Linhas lado a lado */
 .row {
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
 }
 
-/* Campos */
 .field {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
+
 input, select, textarea {
     padding: 0.5rem;
     border-radius: 0.4rem;
     border: 1px solid #ccc;
+    background-color: #f9f9f9;
 }
+
 .radio-group {
     display: flex;
     gap: 1rem;
     margin-top: 0.3rem;
 }
+
+/* BOTÕES AJUSTADOS */
 .actions {
     display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.btn-reset,
+.btn-submit {
+    padding: 0.4rem 1rem;
+    border-radius: 0.4rem;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: 0.3s;
 }
 .btn-reset {
-    background-color: #ccc;
-    border: none;
-    padding: 0.6rem;
-    border-radius: 0.4rem;
-    cursor: pointer;
+    background-color: #e0e0e0;
+    color: #333;
 }
+
+.btn-reset:hover {
+    background-color: #cfcfcf;
+}
+
 .btn-submit {
     background-color: #0077cc;
     color: white;
-    border: none;
-    padding: 0.6rem;
-    border-radius: 0.4rem;
-    cursor: pointer;
 }
+
 .btn-submit:hover {
     background-color: #005fa3;
 }
