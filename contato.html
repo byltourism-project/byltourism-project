@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato · BYL Tourism</title>
+    <link rel="icon" href="/assets/">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="contato-page"></body>
+    <header>
+       <div class="header">
+            <a href="index.html">
+                <img class="logo" src="../assets/logobyl-removebg-preview.png" alt="Logo Brasil Encantado">
+            </a>
+            <nav class="nav-place">
+                <a href="#" class="link">Destinos</a>
+                <a href="#" class="link">Gastronomia</a>
+                <a href="contato.html" class="link active">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="intro">
+            <h1>Fale Conosco</h1>
+            <p class="subtitle">Deixe sua mensagem, iremos entrar em contato o mais rápido possível.</p>
+        </section>
+
+        <section class="container">
+            <form action="#" method="POST" class="contact-form">
+                
+                <div class="row">
+                    <div class="field">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Ex: João" required>
+                    </div>
+                    <div class="field">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" id="sobrenome" name="sobrenome" placeholder="Ex: Silva">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="field">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="field">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="field">
+                        <label for="nascimento">Data de Nascimento</label>
+                        <input type="date" id="nascimento" name="nascimento">
+                    </div>
+                    <div class="field">
+                        <label>Gênero</label>
+                        <div class="radio-group">
+                            <label class="radio-label"><input type="radio" name="genero" value="M"> Masculino</label>
+                            <label class="radio-label"><input type="radio" name="genero" value="F"> Feminino</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="field">
+                        <label for="estado">Estado de interesse</label>
+                        <select id="estado" name="estado">
+                            <option value="" disabled selected>Selecione um destino</option>
+                            <option value="SC">Santa Catarina - Sul</option>
+                            <option value="BA">Bahia - Nordeste</option>
+                            <option value="TO">Tocantins - Norte</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="satisfacao">Nível de Interesse (0 a 10)</label>
+                        <input type="range" id="satisfacao" name="satisfacao" min="0" max="10">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="mensagem">Sua Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva aqui... "></textarea>
+                </div>
+
+                <div class="actions">
+                    <button type="reset" class="btn-reset">Limpar Dados</button>
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer-texte">
+            Realizado por <span class="footer-names">  Bruno Correr · Yossef H. · Leonardo Reis</span> © 
+        </p>
+    </footer>
+</body>
+</html>
