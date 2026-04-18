@@ -166,3 +166,68 @@ footer {
     margin-top: 2rem;
     border-top: 0.1rem solid black;
 }
+
+.main-container {
+    width: 95%;
+    margin: auto;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 700px;
+}
+
+/* Linhas lado a lado */
+.row {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Campos */
+.field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+input, select, textarea {
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    border: 1px solid #ccc;
+}
+.radio-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.3rem;
+}
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.btn-reset {
+    background-color: #ccc;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+.btn-submit {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+.btn-submit:hover {
+    background-color: #005fa3;
+}
