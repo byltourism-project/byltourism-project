@@ -4,6 +4,9 @@ body {
 }
 
 header {
+    position: sticky; /* deixa o topo (menu) em cima, se caso descer a pagina*/
+    top: 0;
+    z-index: 1000; /* fica por cima de outras coisa*/
     background-color: white;
     border-bottom: 1px solid #ddd;
 }
@@ -75,14 +78,12 @@ h1, h2 {
 .container-two h2 {
     margin-bottom: 1rem;
 }
-
 .cards {
     display: flex;
     gap: 2rem;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .card {
     width: 260px;
     min-height: 350px;
@@ -94,16 +95,16 @@ h1, h2 {
     flex-direction: column;
     border: 1px solid #eee;
 }
-
 .card:hover {
     transform: scale(1.02);
     transition: 0.3s;
 }
-
+.btn-card:hover {
+    background-color: #0056b3;
+}
 .bahia-img {
     border-radius: 0.3rem;
 }
-
 h5 {
     text-align: center;
     margin: auto;
@@ -111,7 +112,6 @@ h5 {
     width: 65%;
     padding: 0.2rem;
 }
-
 p {
     font-size: 0.9rem;
     color: #555;
@@ -119,7 +119,6 @@ p {
     margin-bottom: 1rem;
     text-align: center;
 }
-
 .card a {
     text-decoration: none;
     background-color: #0077cc;
@@ -139,22 +138,18 @@ p {
     border-radius: 0.8rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
 .travel-aside h2 {
     margin-bottom: 1rem;
 }
-
 .travel-aside h3 {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     text-align: center;
 }
-
 .travel-aside p {
     line-height: 1.5;
     color: #333;
 }
-
 footer {
     background-color: #e4e1e1;
     font-size: 0.6rem;
@@ -164,18 +159,15 @@ footer {
     border-top: 1px solid #cdc2c2;
     color: #555;
 }
-
 .main-container {
     width: 95%;
     margin: auto;
 }
-
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .contact-form {
     background-color: #ffffff;
     padding: 2rem;
@@ -184,19 +176,16 @@ footer {
     width: 100%;
     max-width: 700px;
 }
-
 .row {
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
 }
-
 .field {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
-
 input, select, textarea {
     padding: 0.5rem;
     border-radius: 0.4rem;
@@ -209,8 +198,6 @@ input, select, textarea {
     gap: 1rem;
     margin-top: 0.3rem;
 }
-
-/* BOTÕES AJUSTADOS */
 .actions {
     display: flex;
     justify-content: flex-end;
@@ -294,4 +281,119 @@ width: 100%;
     height: 160px;
     object-fit: cover;
     border-radius: 0.3rem;
+}
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gastronomia-main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.bloco-titulo {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.bloco-titulo h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.bloco-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.bloco-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.tag-destino {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.coluna-texto {
+    flex: 1;
+    padding: 40px;
+}
+
+.coluna-texto h2 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.coluna-texto p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #555;
+    text-align: justify;
+}
+
+.coluna-imagem {
+    flex: 1;
+    height: 380px;
+}
+
+.coluna-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .bloco-item, .bloco-item.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .coluna-imagem {
+        height: 250px;
+        width: 100%;
+    }
+}
+.botoes-card {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    align-items: center;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+.btn-card {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    width: 80%;
+    text-align: center;
+    transition: background 0.3s;
 }
