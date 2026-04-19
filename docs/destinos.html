@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinos · BYL Tourism</title>
-    <link rel="icon" href="assets/logobyl-removebg-preview.png" type="image/png">
+    <link rel="icon" href="img/logobyl-removebg-preview.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -34,7 +34,7 @@
     <header>
        <div class="header">
             <a href="index.html">
-                <img class="logo" src="assets/logobyl-removebg-preview.png" alt="Logo">
+                <img class="logo" src="img/logobyl-removebg-preview.png" alt="Logo">
             </a>
             <nav class="nav-place">
                 <a href="destinos.html" class="link active">Destinos</a>
@@ -50,9 +50,9 @@
         <section class="travel-aside">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="assets/pelourinho.jpg" alt="Pelourinho - BA"></div>
-                    <div class="swiper-slide"><img src="assets/salv2.jpeg" alt="Farol da Barra"></div>
-                    <div class="swiper-slide"><img src="assets/salv3.jpeg" alt="Praia de Salvador"></div>
+                    <div class="swiper-slide"><img src="img/pelourinho.jpg" alt="Pelourinho - BA"></div>
+                    <div class="swiper-slide"><img src="img/salv2.jpeg" alt="Farol da Barra"></div>
+                    <div class="swiper-slide"><img src="img/salv3.jpeg" alt="Praia de Salvador"></div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -71,9 +71,9 @@
         <section class="travel-aside">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="assets/aurora1.jpg" alt="Rio Azuis"></div>
-                    <div class="swiper-slide"><img src="assets/aurora2.jpg" alt="Natureza Aurora"></div>
-                    <div class="swiper-slide"><img src="assets/aurora3.jpg" alt="Trilhas"></div>
+                    <div class="swiper-slide"><img src="img/aurora1.jpg" alt="Rio Azuis"></div>
+                    <div class="swiper-slide"><img src="img/aurora2.jpg" alt="Natureza Aurora"></div>
+                    <div class="swiper-slide"><img src="img/aurora3.jpg" alt="Trilhas"></div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -92,9 +92,9 @@
         <section class="travel-aside">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="assets/estaleiro.jpg" alt="Estaleiro BC"></div>
-                    <div class="swiper-slide"><img src="assets/rodaG-bc.webp" alt="Roda Gigante"></div>
-                    <div class="swiper-slide"><img src="assets/bondinho-bc.jpg" alt="Bondinho"></div>
+                    <div class="swiper-slide"><img src="img/estaleiro.jpg" alt="Estaleiro BC"></div>
+                    <div class="swiper-slide"><img src="img/rodaG-bc.webp" alt="Roda Gigante"></div>
+                    <div class="swiper-slide"><img src="img/bondinho-bc.jpg" alt="Bondinho"></div>
                 </div>
                 
                 <div class="swiper-button-next"></div> <!-- seta para mudar foto !-->
@@ -111,25 +111,27 @@
             </ul>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2026 BYL Tourism - Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<footer class="footer">
+    <div class="footer-content">
+        <p>Desenvolvido por <span class="highlight">Bruno Correr, Yossef H. & Leonardo Reis</span></p>
+        <span class="separator">|</span>
+        <p>© 2026 BYL Tourism. Todos os direitos reservados.</p>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!--Carrosse inicio-->
     <script>
         var swiper = new Swiper(".mySwiper", {
             loop: true,
             pagination: {
                 el: ".swiper-pagination",
-                clickable: true,
+                clickable: true, // mudar caso clique na bolinha
             },
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next", // direita ->
+                prevEl: ".swiper-button-prev", // esquerda <-
             },
             autoplay: {
-                delay: 3000,
+                delay: 3000, // tempo 
             },
         });
     </script>
